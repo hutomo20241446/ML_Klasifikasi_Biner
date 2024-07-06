@@ -57,9 +57,10 @@ with tab1:
         - Klik tombol "Latih Model" untuk memulai proses pelatihan.
         - Aplikasi akan memproses data, melatih model, dan menampilkan akurasi model setelah pelatihan selesai.
         - Model yang dilatih akan tersimpan selama sesi aktif di browser Anda.
+        - Latih semua model yang ingin digunakan sebelum melakukan prediksi pertama kali agar tidak error.
 
         **5. Lakukan Prediksi:**
-        - Setelah model dilatih, Anda dapat menggunakan model untuk melakukan prediksi.
+        - Setelah semua model yang ditentukan telah dilatih, Anda dapat menggunakan model untuk melakukan prediksi.
         - Pilih model yang sudah dilatih dari dropdown "Pilih Model untuk Memprediksi".
         - Masukkan data baru melalui formulir input yang disediakan untuk setiap fitur.
         - tekan "Enter" setiap kali menginput data baru ke formulir.
