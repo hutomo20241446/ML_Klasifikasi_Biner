@@ -185,22 +185,13 @@ with tab2:
                 for col in feature_columns:
                     st.session_state.input_data[col] = st.text_input(f"Input {col}", st.session_state.input_data[col])
 
-                col1, col2 = st.columns(2)
-                with col1:
-                    if st.button("Prediksi"):
-                        new_data_df = pd.DataFrame([st.session_state.input_data])
-                        new_data_df = new_data_df.apply(pd.to_numeric, errors='ignore')  # Convert to numeric where possible
-                        prediction = model.predict(new_data_df)
-                        st.write(f"Hasil Prediksi: {list(target_mapping.keys())[list(target_mapping.values()).index(prediction[0])]}")
-                
-                with col2:
-                    if st.button("Hapus"):
-                        for col in feature_columns:
-                            st.session_state.input_data[col] = ''
-                        st.experimental_rerun()
+                if st.button("Prediksi"):
+                    new_data_df = pd.DataFrame([st.session_state.input_data])
+                    new_data_df = new_data_df.apply(pd.to_numeric, errors='ignore')  # Convert to numeric where possible
+                    prediction = model.predict(new_data_df)
+                    st.write(f"Hasil Prediksi: {list(target_mapping.keys())[list(target_mapping.values()).index(prediction[0])]}")
     else:
         st.write("Belum ada model yang tersimpan")
-
 
 # Membuat footer
 footer = """
@@ -220,5 +211,4 @@ footer = """
     <p>&copy;Muhammad Fahmi Hutomo</p>
 </div>
 """
-
 st.markdown(footer, unsafe_allow_html=True)
