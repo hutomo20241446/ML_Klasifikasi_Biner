@@ -18,7 +18,7 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 # Get the parent directory
 parent_dir = os.path.dirname(working_dir)
 
-st.set_page_config(page_title="Uas_Pak_Ayat", page_icon="🧠", layout="centered")
+st.set_page_config(page_title="UAS_Semester4_ILKOM_UPB_KEBUMEN", page_icon="🧠", layout="centered")
 
 st.title("🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠🧠")
 st.title("Machine Learning Model Klasifikasi")
