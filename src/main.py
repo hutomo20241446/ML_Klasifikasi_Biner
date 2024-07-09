@@ -57,7 +57,8 @@ with tab1:
         - Klik tombol "Latih Model" untuk memulai proses pelatihan.
         - Aplikasi akan memproses data, melatih model, dan menampilkan akurasi model setelah pelatihan selesai.
         - Model yang dilatih akan tersimpan selama sesi aktif di browser Anda.
-        - Latih semua model yang ingin digunakan sebelum melakukan prediksi pertama kali agar tidak error.
+        - Latih semua model yang ingin digunakan sebelum melakukan prediksi.
+        - Jika memilih beberapa model termasuk XGBoost classifier, latih model ini pertama kali, baru model yang lainnya.
 
         **5. Lakukan Prediksi:**
         - Setelah semua model yang ditentukan telah dilatih, Anda dapat menggunakan model untuk melakukan prediksi.
