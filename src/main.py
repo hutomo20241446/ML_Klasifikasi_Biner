@@ -72,7 +72,7 @@ with tab1:
 
         Silahkan email ke [mfhutomo@gmail.com](mailto:mfhutomo@gmail.com) untuk bantuan lebih lanjut. 
     """)
-    st.write('Source code dapat diakses [di sini](https://github.com/hutomo20241446/ML_Klasifikasi_Biner/blob/main/src)')
+    st.write('Source code aplikasi ini adalah adaptasi bebas dari akun github siddhardhan23 [no-code-ml-mpodel-training-app](https://github.com/siddhardhan23/no-code-ml-mpodel-training-app/tree/main/src) dan dapat diakses [di sini](https://github.com/hutomo20241446/ML_Klasifikasi_Biner/blob/main/src)')
 
 # Tab 2
 with tab2:
